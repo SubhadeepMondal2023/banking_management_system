@@ -1,4 +1,5 @@
 package com.project.banking.entity;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
@@ -26,34 +27,49 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String accountId;
+
+    /**
+     * Current balance of the account.
+     */
     private double balance;
+
+    /**
+     * Name of the account.
+     */
     private String accountName;
+
     /**
      * Unique account number.
      */
     @Column(unique = true, nullable = false)
     private long accountNumber;
+
     /**
      * Currency of the account.
      */
     private String currency;
+
     /**
      * Code associated with the account.
      */
     private String code;
+
     /**
      * Label for the account.
      */
     private String label;
+
     /**
      * Symbol representing the account.
      */
     private char symbol;
+
     /**
      * Timestamp of the last update to the account.
      */
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
     /**
      * Timestamp of the account creation.
      */

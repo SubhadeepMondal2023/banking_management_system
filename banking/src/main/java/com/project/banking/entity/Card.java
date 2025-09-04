@@ -1,5 +1,6 @@
 package com.project.banking.entity;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
