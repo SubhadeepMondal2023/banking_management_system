@@ -68,7 +68,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration corsConfig = new CorsConfiguration();
         corsConfig.addAllowedOrigin("http://localhost:3000"); // frontend dev
-        corsConfig.addAllowedOrigin("https://your-frontend-domain.com"); // when deployed
+        corsConfig.addAllowedOrigin("https://fascinating-platypus-4b5776.netlify.app"); // when deployed
         corsConfig.addAllowedMethod("*");
         corsConfig.addAllowedHeader("*");
         corsConfig.setAllowCredentials(true); // allow cookies/JWTs if needed
