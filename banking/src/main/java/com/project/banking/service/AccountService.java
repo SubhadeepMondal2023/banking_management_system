@@ -89,8 +89,6 @@ public class AccountService {
     }
 
     public Account findAccount(String code, long recipientAccountNumber) {
-        System.out.println("Account Number : " + recipientAccountNumber);
-        System.out.println("Code: " + code);
         return accountRepository.findByCodeAndAccountNumber(code, recipientAccountNumber).orElseThrow();
     }
 }

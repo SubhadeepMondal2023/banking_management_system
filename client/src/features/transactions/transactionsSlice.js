@@ -35,12 +35,11 @@ export const transactionSlice = createSlice({
             })
            .addCase(fetchTransactions.fulfilled, (state, action) => {
                 state.transactions = action.payload.sort((a, b) => {
-                    const dateA = new Date(a.initiated)
-                    
-                    const dateB = new Date(b.initiated)
-                    return dateA - dateB
-                }) 
-                state.status = 'SUCCESS'
+                    const dateA = new Date(a.date);
+                    const dateB = new Date(b.date);
+                    return dateA - dateB; // descending order
+                });
+                state.status = 'SUCCESS';
             })
            .addCase(fetchTransactions.rejected, (state, action) => {
                 console.error('Error:', action.error.message)

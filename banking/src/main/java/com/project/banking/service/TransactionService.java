@@ -34,7 +34,7 @@ public class TransactionService {
      * @return A list of transactions for the given user, paginated.
      */
     public List<Transaction> getAllTransactions(String page, User user) {
-        Pageable pageable = PageRequest.of(Integer.parseInt(page), 10, Sort.by("createdAt").ascending());
+        Pageable pageable = PageRequest.of(Integer.parseInt(page), 10, Sort.by("createdAt").descending());
         return transactionRepository.findAllByOwnerUid(user.getUid(), pageable).getContent();
     }
 
@@ -47,7 +47,7 @@ public class TransactionService {
      * @return A list of transactions for the given card and user, paginated.
      */
     public List<Transaction> getTransactionsByCardId(String cardId, String page, User user) {
-        Pageable pageable = PageRequest.of(Integer.parseInt(page), 10, Sort.by("createdAt").ascending());
+        Pageable pageable = PageRequest.of(Integer.parseInt(page), 10, Sort.by("createdAt").descending());
         return transactionRepository.findAllByCardCardIdAndOwnerUid(cardId, user.getUid(), pageable).getContent();
     }
 
