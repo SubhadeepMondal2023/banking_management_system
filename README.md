@@ -5,7 +5,7 @@ A comprehensive **Banking Management System** built with **Spring Boot**, provid
 ---
 ## 🎥 Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/_BrWRLFjBWU/0.jpg)](https://youtu.be/_BrWRLFjBWU)
+[Watch Demo Video on YouTube](https://youtu.be/_BrWRLFjBWU)
 
 
 ## Features
