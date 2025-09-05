@@ -8,22 +8,22 @@ A comprehensive **Banking Management System** built with **Spring Boot**, provid
 
 ### Core Banking Operations
 - **User Management**: Secure user registration with **BCrypt password encryption** and **JWT-based authentication**.  
-  ![Register](public/register.png)
+  ![Register](client/public/register.png)
 
 - **Account Services**: Create and manage **multi-currency accounts** with unique account numbers.  
-  ![Dashboard](public/dashboard.png)
+  ![Dashboard](client/public/dashboard.png)
 
 - **Fund Transfers**: Secure money transfers between accounts with sender/receiver validation.  
-  ![Transfer Funds](public/transfer_funds.png)
+  ![Transfer Funds](client/public/transfer_funds.png)
 
 - **Transaction History**: List of recent transactions with details.  
-  ![Recent Transactions](public/recent_transactions.png)
-  
+  ![Recent Transactions](client/public/recent_transactions.png)
+
 - **Currency Conversion**: Real-time currency exchange using live rates.  
-  ![Convert](public/convert.png)
+  ![Convert](client/public/convert.png)
 
 - **Account Card**: Visual card-based display for accounts.  
-  ![Card](public/card.png)
+  ![Card](client/public/card.png)
 
 
 
