@@ -59,8 +59,7 @@ const Account = () => {
         </div>
         
         <div className='text-sm sm:text-xl p-2 rounded-xl flex gap-2'>
-            <button className='p-2 rounded-xl bg-gray-50 hover:bg-gray-200 pt-2 pb-2 hover:bg-white'>Deposit</button>
-            <button onClick={() => setShowWithdrawForm(true)} className='p-2 rounded-xl bg-gray-50 hover:bg-gray-200 pt-2 pb-2 hover:bg-white'>Withdraw</button>
+            <button onClick={() => setShowWithdrawForm(true)} className='p-2 rounded-xl bg-gray-50 hover:bg-gray-200 pt-2 pb-2 hover:bg-white'>Transfer</button>
             <button onClick={() => navigatePage('/dashboard/convert')} className='p-2 rounded-xl bg-gray-50 hover:bg-gray-200 pt-2 pb-2 hover:bg-white text-blue-500 flex items-center'><FaExchangeAlt /> Convert</button>
         </div></>}
       </SectionContainer>

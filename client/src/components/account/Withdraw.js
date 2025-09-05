@@ -73,7 +73,7 @@ const Withdraw = ({ setShowWithdrawForm }) => {
         {enableSpinner && <Spinner />}
         <button className='absolute top-1 right-2' type='button' onClick={closeWithdrawForm}><FaTimes /></button>
         <div className='flex flex-col gap-4'>
-            <label>Withdraw Your Funds</label>
+            <label>Transfer Your Funds</label>
         </div>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-2'>
@@ -113,7 +113,7 @@ const Withdraw = ({ setShowWithdrawForm }) => {
             <p className='text-[12px] flex-1 w-full flex justify-end'>You'll be charged {`${fromAccount.symbol} ${transactionInfo.amount * 0.01}`}</p>
           </div>
         </div>
-        <button disabled={transactionInfo.amount > fromAccount.balance || transactionInfo.amount <= 0} value={transactionInfo.amount} onClick={transfer} type="button" className='bg-blue-500 p-2 rounded-xl text-white font-bold mt-2  hover:bg-opacity-90 transition-all'>Withdraw</button>
+        <button disabled={transactionInfo.amount > fromAccount.balance || transactionInfo.amount <= 0} value={transactionInfo.amount} onClick={transfer} type="button" className='bg-blue-500 p-2 rounded-xl text-white font-bold mt-2  hover:bg-opacity-90 transition-all'>Transfer</button>
       </form>
     </section>
   )
