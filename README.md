@@ -3,6 +3,10 @@
 A comprehensive **Banking Management System** built with **Spring Boot**, providing secure user authentication, account management, transaction processing, and real-time currency conversion capabilities.
 
 ---
+## 🎥 Demo Video
+
+[![Demo Video](https://img.youtube.com/vi/_BrWRLFjBWU/0.jpg)](https://youtu.be/_BrWRLFjBWU)
+
 
 ## Features
 
