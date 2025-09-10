@@ -5,7 +5,7 @@ A comprehensive **Banking Management System** built with **Spring Boot**, provid
 ---
 ## 🎥 Demo Video
 
-<a href="https://www.youtube.com/watch?si=tbR8M96PnOvY8Fj1&v=_BrWRLFjBWU&feature=youtu.be" target="_blank">
+<a href="https://www.youtube.com/watch?v=CXwYpBrCdMo&cc_load_policy=1" target="_blank">
 ▶ Watch Demo Video on YouTube (with Subtitles)
 </a>
 
@@ -37,7 +37,6 @@ A comprehensive **Banking Management System** built with **Spring Boot**, provid
 ### Security Features
 - **JWT Token-based Stateless Authentication**: Ensures secure access to endpoints.
 - **Password Encryption**: Using Spring Security’s BCrypt encoder.
-- **Role-based Access Control**: Fine-grained access to resources.
 
 ---
 
@@ -59,9 +58,36 @@ A comprehensive **Banking Management System** built with **Spring Boot**, provid
 - **Lombok** – Code generation and boilerplate reduction
 - **Maven** – Build tool and dependency management
 
----
+## 🚀 Getting Started
 
-## Architecture
+### Prerequisites
+- Java 21 or higher  
+- PostgreSQL database  
+- Node.js (for frontend)  
+- Maven (for backend build)  
 
-- **Layered Architecture**: Follows **Controller → Service → Repository** pattern for modularity.
-- **Transactional Services**: Database transaction management ensures data integrity.
+### Backend Setup
+```bash
+# Clone repository
+git clone <repo_url>
+
+# Move to backend
+cd banking
+
+# Configure DB in application.properties
+# Run application
+mvn spring-boot:run
+```
+
+### Frontend Setup
+```bash
+cd client
+npm install
+npm start
+```
+
+## Contributing
+Fork the repository
+Create a feature branch
+Make your changes
+Submit a pull request
