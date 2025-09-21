@@ -74,13 +74,13 @@ Below are key charts from the analysis:
 ![Amount Distribution](images/transaction_amount_distribution.png)
 
 ### Amount vs isFraud (Boxplot)
-![Amount vs isFraud](images/amount_vs_isfraud.png)
+![Amount vs isFraud](images/amount_vs_isFraud.png)
 
 ### Frauds Over Time
 ![Frauds Over Time](images/frauds_over_time.png)
 
 ### Fraud Distribution in Transfer & Cash_Out
-![Fraud Distribution](images/fraud_distribution_transfer_cashout.png)
+![Fraud Distribution](images/fraud_distribution_transfer_cashOut.png)
 
 ### Correlation Matrix
 ![Correlation Matrix](images/correlation_matrix_heatmap.png)
