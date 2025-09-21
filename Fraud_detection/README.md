@@ -88,8 +88,30 @@ Below are key charts from the analysis:
 ## Model Details
 
 - **Preprocessing:** Standard scaling for numeric features, one-hot encoding for transaction type.
-- **Model:** Logistic Regression (`class_weight='balanced'`, `max_iter=1000`)
+- **Models:**
+  - Logistic Regression (`class_weight='balanced'`, `max_iter=1000`) — trained on full dataset
+  - Random Forest (ensemble, `class_weight='balanced'`, `n_estimators=100`, `max_depth=10`) — trained on 5% sample
+  - XGBoost (ensemble, `n_estimators=100`, `max_depth=5`, `scale_pos_weight` to handle class imbalance) — trained on 5% sample
 - **Features Used:** `type`, `amount`, `oldbalanceOrg`, `newbalanceOrig`, `oldbalanceDest`, `newbalanceDest`
+
+## Model Comparison
+
+Below is a comparison of Logistic Regression (trained on the full dataset) with ensemble models Random Forest and XGBoost (trained on a 5% sample due to computational constraints):
+
+| Model                        | Precision | Recall | F1-score | ROC-AUC |
+|------------------------------|-----------|--------|----------|---------|
+| Logistic Regression (Full)   | 0.619     | 0.862  | 0.721    | 0.997   |
+| Random Forest (5% Sample)    | 0.251     | 0.919  | 0.394    | 0.999   |
+| XGBoost (5% Sample)          | 0.665     | 0.911  | 0.769    | 1.000   |
+
+![Model Comparison](images/models_comparison.png)
+
+**Notes:**  
+- Random Forest and XGBoost are **ensemble models**, trained on only a 5% representative sample to reduce computation time.  
+- Logistic Regression was trained on the **full dataset** as it trains much faster.  
+- XGBoost shows the highest metrics on the 5% sample, but this does **not guarantee it will outperform Logistic Regression on the full dataset**.  
+- These results demonstrate the models’ ability to handle class imbalance and capture fraud patterns efficiently.
+
 
 ## Results
 
