@@ -42,6 +42,8 @@ A comprehensive **Banking Management System** built with **Spring Boot**, provid
 This repository also contains a dedicated [Fraud Detection Pipeline](Fraud_detection/README.md) in the `Fraud_detection` folder.  
 It uses machine learning to detect fraudulent financial transactions.
 
+**Interactive Streamlit web app for predictions** → [Live Demo](https://frauddetectionpipeline.streamlit.app/) 
+
 **Key Features:**
 - Exploratory Data Analysis (EDA) and feature engineering
 - Machine learning pipeline (preprocessing + logistic regression)

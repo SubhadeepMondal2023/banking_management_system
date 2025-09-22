@@ -3,6 +3,8 @@
 This project implements a machine learning pipeline for detecting fraudulent financial transactions using a dataset of transaction records.
 **The trained model achieves an impressive 94% accuracy (see notebook for details).**
 
+**Interactive Streamlit web app for predictions** → [Live Demo](https://frauddetectionpipeline.streamlit.app/)  
+
 ## Project Structure
 
 - `ananlysis_model.ipynb`: Jupyter notebook containing EDA, feature engineering, model training, and evaluation.
