@@ -1,6 +1,18 @@
-streamlit==1.37.0
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.5.1
-joblib==1.4.2
-imbalanced-learn==0.12.3
+# Core Streamlit
+streamlit>=1.28.0,<1.35.0
+
+# Data Processing  
+pandas>=2.0.0,<2.3.0
+numpy>=1.24.0,<1.26.0
+
+# Machine Learning
+scikit-learn>=1.3.0,<1.4.0
+joblib>=1.3.0,<1.5.0
+xgboost>=1.7.0,<2.1.0
+
+# Visualization (for your notebook - optional for deployment)
+matplotlib>=3.7.0,<4.0.0
+seaborn>=0.12.0,<1.0.0
+
+# Protocol Buffers (prevents common deployment issues)
+protobuf>=3.20,<6
