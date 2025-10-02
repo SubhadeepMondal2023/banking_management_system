@@ -1,9 +1,9 @@
-# Banking Management System
+# Banking Management System with Transaction Fraud Detection
 
 A comprehensive **Banking Management System** built with **Spring Boot**, providing secure user authentication, account management, transaction processing, and real-time currency conversion capabilities.
 
 ---
-### 🚧 Ongoing Task: Fraud Detection Pipeline Integration
+### 🚧 Ongoing Task: Transaction Fraud Detection Pipeline Integration
 
 I am actively working on integrating a machine learning-based **Fraud Detection Pipeline** into the banking system.  
 **Current Status:** Ongoing development.  
