@@ -3,6 +3,12 @@
 A comprehensive **Banking Management System** built with **Spring Boot**, providing secure user authentication, account management, transaction processing, and real-time currency conversion capabilities.
 
 ---
+### 🚧 Ongoing Task: Fraud Detection Pipeline Integration
+
+I am actively working on integrating a machine learning-based **Fraud Detection Pipeline** into the banking system.  
+**Current Status:** Ongoing development.  
+For details and progress, see the [Fraud Detection Pipeline](#fraud-detection-pipeline) section below in this README.
+
 
 ## 🎥 Demo Video
 
@@ -37,7 +43,7 @@ A comprehensive **Banking Management System** built with **Spring Boot**, provid
 
 ---
 
-## 🛡️ Fraud Detection Pipeline
+##  Fraud Detection Pipeline
 
 This repository also contains a dedicated [Fraud Detection Pipeline](Fraud_detection/README.md) in the `Fraud_detection` folder.  
 It uses machine learning to detect fraudulent financial transactions.
