@@ -1,9 +1,6 @@
 # Fraud Detection Pipeline with Web App
 
 This project implements a machine learning pipeline for detecting fraudulent financial transactions using a dataset of transaction records.
-**The trained model achieves an impressive 94% accuracy (see notebook for details).**
-
-**Interactive Streamlit web app for predictions** → [Live Demo](https://frauddetectionpipeline.streamlit.app/)  
 
 ## Project Structure
 
@@ -13,11 +10,6 @@ This project implements a machine learning pipeline for detecting fraudulent fin
 - `fraud_detection_pipeline.pkl`: Saved trained pipeline (ignored by git).
 - `images/`: Contains project-related images.
 - `README.md`: Project documentation.
-
-## Dataset
-
-The dataset used in this project is available on Kaggle:  
-[Fraud Detection Dataset](https://www.kaggle.com/datasets/amanalisiddiqui/fraud-detection-dataset?resource=download)
 
 ## Getting Started
 
@@ -33,9 +25,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn streamlit joblib
 ```
 
 ### Usage
-
-#### 1. Data Analysis & Model Training
-
 Open and run [`ananlysis_model.ipynb`](ananlysis_model.ipynb) to:
 
 - Load and explore the dataset
@@ -43,17 +32,6 @@ Open and run [`ananlysis_model.ipynb`](ananlysis_model.ipynb) to:
 - Train a logistic regression pipeline
 - Save the trained model as `fraud_detection_pipeline.pkl`
 
-#### 2. Web App Prediction
-
-Run the Streamlit app:
-
-```sh
-streamlit run fraud_detection.py
-```
-
-Enter transaction details to get a fraud prediction using the trained model.
-
-![Web App Screenshot](images/web-app.png)
 ## Features
 
 - Exploratory Data Analysis (EDA)
@@ -113,9 +91,3 @@ Below is a comparison of Logistic Regression (trained on the full dataset) with 
 - Logistic Regression was trained on the **full dataset** as it trains much faster.  
 - XGBoost shows the highest metrics on the 5% sample, but this does **not guarantee it will outperform Logistic Regression on the full dataset**.  
 - These results demonstrate the models’ ability to handle class imbalance and capture fraud patterns efficiently.
-
-
-## Results
-
-Model evaluation metrics and confusion matrix are available in the notebook output.  
-See [`ananlysis_model.ipynb`](ananlysis_model.ipynb) for details.
