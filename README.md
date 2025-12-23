@@ -1,4 +1,4 @@
-# Banking Management System with Transaction Fraud Detection
+# Smart Finance Portal : A Banking Management System with Transaction Fraud Detection
 
 A comprehensive **Banking Management System** built with **Spring Boot**, providing secure user authentication, account management, transaction processing, and real-time currency conversion capabilities.
 
