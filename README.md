@@ -1,14 +1,7 @@
-# Banking Management System with Transaction Fraud Detection
-
-A comprehensive **Banking Management System** built with **Spring Boot**, providing secure user authentication, account management, transaction processing, and real-time currency conversion capabilities.
+# Smart Finance Portal
+A comprehensive system built with **Spring Boot**, providing secure user authentication, account management, transaction processing, and real-time currency conversion capabilities.
 
 ---
-### 🚧 Ongoing Task: Transaction Fraud Detection Pipeline Integration
-
-I am actively working on integrating a machine learning-based **Fraud Detection Pipeline** into the banking system.  
-**Current Status:** Ongoing development.  
-For details and progress, see the [Fraud Detection Pipeline](#fraud-detection-pipeline) section below in this README.
-
 
 ## 🎥 Demo Video
 
@@ -41,34 +34,11 @@ For details and progress, see the [Fraud Detection Pipeline](#fraud-detection-pi
 - **JWT Token-based Stateless Authentication**: Ensures secure access to endpoints.
 - **Password Encryption**: Using Spring Security’s BCrypt encoder.
 
----
 
-##  Fraud Detection Pipeline
+## Project Overview
 
-This repository also contains a dedicated [Fraud Detection Pipeline](Fraud_detection/README.md) in the `Fraud_detection` folder.  
-It uses machine learning to detect fraudulent financial transactions.
+A secure and user-friendly banking application built with **Spring Boot** (backend) and **React** (frontend). It provides secure user authentication, account and card management, transactions, and real-time currency conversion. Use the sections below to get started and contribute.
 
-**Interactive Streamlit web app for predictions** → [Live Demo](https://frauddetectionpipeline.streamlit.app/) 
-
-**Key Features:**
-- Exploratory Data Analysis (EDA) and feature engineering
-- Machine learning pipeline (preprocessing + logistic regression)
-- Model evaluation (classification report, confusion matrix)
-- Interactive Streamlit web app for predictions
-
-**How it works:**
-- Data analysis and model training are performed in [`ananlysis_model.ipynb`](Fraud_detection/ananlysis_model.ipynb).
-- The trained model is saved as `fraud_detection_pipeline.pkl`.
-- The web app ([`fraud_detection.py`](Fraud_detection/fraud_detection.py)) loads this model and predicts fraud for new transactions.
-
-**Integration Status:**  
-Integration of the fraud detection pipeline with the main React + Spring Boot banking app is **under development**.  
-Currently, the pipeline is maintained separately and will be merged once the integration is complete.  
-You can follow progress or contribute directly within the [`Fraud_detection`](Fraud_detection) folder at the root of this repository.
-
-For details, see [Fraud_detection/README.md](Fraud_detection/README.md).
-
----
 
 ## Tech Stack
 

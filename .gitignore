@@ -5,4 +5,7 @@
 # VS code
 .vscode/
 
+# as of now, lets ignore the ml prototype
+Fraud_detection/
+
 .env
